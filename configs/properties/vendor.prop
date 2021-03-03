@@ -43,6 +43,9 @@ ro.vendor.bt.bdaddr_path=/data/vendor/etc/bluetooth_bdaddr
 # Camera
 vendor.camera.enable.uvc=true
 
+# Chipset
+ro.soc.manufacturer=QTI
+
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
