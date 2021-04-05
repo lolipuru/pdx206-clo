@@ -13,6 +13,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Shipping API level
 BOARD_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
