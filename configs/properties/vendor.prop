@@ -73,6 +73,9 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 persist.vendor.colorgamut.current.mode=1
 ro.hardware.vulkan=adreno
