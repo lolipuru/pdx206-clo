@@ -8,3 +8,6 @@ type idd_root_dir, file_type;
 type idd_socket_file, file_type;
 type tad_socket, file_type;
 type startupprober_file, file_type;
+
+type sysfs_tsp, fs_type, sysfs_type;
+type sysfs_dp, fs_type, sysfs_type;
