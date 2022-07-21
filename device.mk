@@ -210,6 +210,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AOSPASonyFrameworksResCommon \
     SonyEdoFrameworksResCommon \
+    SonyEdoNfcOverlay \
     SonyEdoSettingsProviderOverlayCommon \
     SonyEdoSettingsResCommon \
     SonyEdoSystemUIResCommon \
