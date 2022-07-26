@@ -1,1 +1,2 @@
 vendor_internal_prop(vendor_fingerprint_hwid_prop);
+vendor_internal_prop(hal_somc_charger_prop)

@@ -2,3 +2,4 @@ type hal_miscta_hwservice, hwservice_manager_type;
 type hal_idd_hwservice, hwservice_manager_type;
 type hal_secd_hwservice, hwservice_manager_type;
 type hal_egis_hwservice, hwservice_manager_type;
+type hal_somc_charger_hwservice, hwservice_manager_type;

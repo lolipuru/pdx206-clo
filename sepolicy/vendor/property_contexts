@@ -1,1 +1,3 @@
 vendor.fingerprint.hwid                 u:object_r:vendor_fingerprint_hwid_prop:s0
+persist.vendor.battery.smt_chg          u:object_r:hal_somc_charger_prop:s0
+persist.vendor.battery.charge           u:object_r:hal_somc_charger_prop:s0
