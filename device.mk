@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml
 
+# Charger
+PRODUCT_PACKAGES += \
+    vendor.semc.hardware.charger@1.0.vendor
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -212,6 +216,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     vibrator \
     wfd \
     wlan
+
+# SEMC Display
+PRODUCT_PACKAGES += \
+    vendor.semc.hardware.display@2.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
