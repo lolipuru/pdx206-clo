@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     init.sony-device-common.rc \
     init.sony-platform.rc \
     init.sony.rc \
+    init.qcom.msim.sh \
     ueventd.pdx206.rc
 
 # Input

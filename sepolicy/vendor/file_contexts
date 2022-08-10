@@ -31,9 +31,13 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/appslog     u:object_r:appslog_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/diag        u:object_r:diag_block_device:s0
 /dev/socket/idd(/.*)?                                     u:object_r:idd_socket_file:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/LTALabel   u:object_r:ltalabel_block_device:s0
 
 # Fingerprint devices
 /dev/esfp0        u:object_r:etsd_device:s0
+
+# Shell scripts
+/(vendor|system/vendor)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
 
 # Sony camera devices
 /dev/sony_camera0   u:object_r:sony_camera_device:s0

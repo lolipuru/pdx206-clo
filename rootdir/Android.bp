@@ -32,6 +32,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.qcom.msim.sh",
+    src: "init.qcom.msim.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "ueventd.pdx206.rc",
     filename: "ueventd.rc",
