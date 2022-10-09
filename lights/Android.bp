@@ -28,3 +28,10 @@ cc_binary {
     ],
     proprietary: true,
 }
+
+cc_library_shared {
+    name: "android.hardware.light-V1-ndk_platform",
+    shared_libs: ["android.hardware.light-V1-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
