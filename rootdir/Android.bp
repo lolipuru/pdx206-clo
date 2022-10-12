@@ -34,7 +34,8 @@ prebuilt_etc {
 
 sh_binary {
     name: "init.qcom.msim.sh",
-    src: "init.qcom.msim.sh",
+    src: "etc/init.qcom.msim.sh",
+    sub_dir: "init",
     vendor: true,
 }
 
