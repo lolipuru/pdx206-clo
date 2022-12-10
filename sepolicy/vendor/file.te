@@ -4,6 +4,7 @@ type sysfs_camera, fs_type, sysfs_type;
 type tof_rgbcir_sysfs, fs_type, sysfs_type;
 
 # charging
+type sysfs_battchg_ext, fs_type, sysfs_type;
 type vendor_sysfs_smb_device, fs_type, sysfs_type;
 
 # display
