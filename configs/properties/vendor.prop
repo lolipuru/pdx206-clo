@@ -101,6 +101,8 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Sensors
 persist.vendor.sensors.sync_request=true
 persist.vendor.sensors.allow_non_default_discovery=true
+ro.sensor.pickup=android.sensor.tilt_detector
+ro.sensor.pickup.value=0
 
 # shutdown
 sys.vendor.shutdown.waittime=500
