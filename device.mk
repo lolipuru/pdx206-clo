@@ -56,6 +56,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Init
+PRODUCT_PACKAGES += \
+    init.target.rc \
+    init.sony-device-common.rc \
+    init.sony-platform.rc \
+    init.sony.rc \
+    ueventd.pdx206.rc
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom

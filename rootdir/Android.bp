@@ -3,3 +3,38 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sony-device-common.rc",
+    src: "etc/init.sony-device-common.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sony-platform.rc",
+    src: "etc/init.sony-platform.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sony.rc",
+    src: "etc/init.sony.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.pdx206.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.pdx206.rc",
+    vendor: true,
+}
