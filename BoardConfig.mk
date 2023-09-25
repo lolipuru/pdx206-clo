@@ -81,6 +81,16 @@ TARGET_BOARD_PLATFORM := kona
 # Qcom
 BOARD_USES_QCOM_HARDWARE := true
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/device_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/compatibility_matrix_sony.xml
+
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_sony.xml
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

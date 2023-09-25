@@ -1,0 +1,54 @@
+<manifest version="2.0" type="device" target-level="5">
+    <hal format="hidl">
+      <name>vendor.semc.hardware.secd</name>
+      <transport>hwbinder</transport>
+      <fqname>@1.1::IDeviceSecurity/default</fqname>
+    </hal>
+    <hal format="hidl">
+      <name>vendor.somc.hardware.security.secd</name>
+      <transport>hwbinder</transport>
+      <fqname>@1.1::IDeviceSecurity/default</fqname>
+    </hal>
+    <hal format="hidl">
+      <name>vendor.semc.system.idd</name>
+      <transport>hwbinder</transport>
+      <fqname>@1.0::IIdd/default</fqname>
+      <fqname>@1.0::IIdd/logreader</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.display</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IDisplay/default</fqname>
+        <fqname>@2.2::IFramerateController/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.somc.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISomcHook/somchook</fqname>
+        <fqname>@1.0::ISomcHook/somchook2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.somc.hardware.miscta</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMisctaGlobal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.somc.hardware.swiqi</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IHidlSwiqi/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.egistec.hardware.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IBiometricsFingerprintRbs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.charger</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ICharger/default</fqname>
+    </hal>
+</manifest>
