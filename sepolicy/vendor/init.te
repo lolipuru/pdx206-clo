@@ -1,0 +1,7 @@
+allow init ta_qmi_service_exec:file { read getattr map execute open };
+allow init ta_qmi_service:process { transition siginh rlimitinh };
+dontaudit init ta_qmi_service:process noatsecure;
+
+allow init tad_socket:sock_file { write };
+
+allow init tad:unix_stream_socket { connectto };
