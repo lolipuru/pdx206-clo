@@ -69,10 +69,6 @@ vendor/lib/rfsa/adsp/libstdc++.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-
 # Audio Extensions
 vendor/lib/libhdmipassthru.so
 vendor/lib/libsonydseehxwrapper.so
@@ -823,10 +819,8 @@ vendor/firmware/CAMERA_ICP.elf
 
 # Camera libs
 vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
-vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib/camera/components/com.qti.eisv2.so
@@ -1088,7 +1082,6 @@ vendor/lib64/libcamxncs.so
 vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libcdfw.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvp2.so
@@ -1159,8 +1152,6 @@ vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/local_libcamera_metadata.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so
 vendor/lib64/vendor.somc.camera.device@3.2-impl.so
 vendor/lib64/vendor.somc.camera.device@3.3-impl.so
@@ -1335,20 +1326,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
-
-# Display (SDM)
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-
 # Display calibration data
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
 vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
@@ -1514,13 +1491,6 @@ vendor/lib64/hw/vulkan.adreno.so
 # GNSS
 vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/mlid
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
-vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
 vendor/etc/apdr.conf
 vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
@@ -1534,54 +1504,20 @@ vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
-vendor/etc/cacert_location.pem
-vendor/etc/xtra_root_cert.pem
-vendor/etc/xtwifi.conf
-vendor/lib/libcdfw_remote_api.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
-vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
-vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
 vendor/lib64/libjnihelper.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_core.so
-vendor/lib64/libloc_socket.so
 vendor/lib64/liblocation_api.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libminksocket.so
-vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_server_protocol.so
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0.so
-vendor/lib64/vendor.qti.gnss@4.0-service.so
-vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # HotwordEnrollment
@@ -1728,24 +1664,8 @@ vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
 # Media (Qcom Codec)
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib/libstagefright_hdcp.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libstagefright_hdcp.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
@@ -1784,9 +1704,6 @@ vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxMpeghDecSw.so
 vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
@@ -1806,8 +1723,6 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
@@ -1828,7 +1743,6 @@ system_ext/etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
-vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -1866,8 +1780,6 @@ vendor/lib64/libqmiservices.so
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
-vendor/lib/libqrtr.so
-vendor/lib64/libqrtr.so
 
 # Qteeconnector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -1878,7 +1790,6 @@ vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/com.qualcomm.qti.izattools.xml
 -vendor/app/IWlanService/IWlanService.apk
@@ -1908,7 +1819,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/seccomp_policy/qspm.policy
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
@@ -2313,49 +2223,6 @@ vendor/firmware/tzwvcpybuf.b06
 vendor/firmware/tzwvcpybuf.b07
 vendor/firmware/tzwvcpybuf.mdt
 
-# WiFi Display (system) - from OnePlus 8 Pro (IN2025_11.F.15)
-system_ext/bin/wfdservice|fc204600629fbf60c4c6c187f0943d21643fdb4a
-system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
-system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
-system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|5596408c11c7021ba91b00efc635270d01a36f15
-system_ext/lib/libmmrtpdecoder.so|e15387b44fd9b3661d763d934663551ca30743d7
-system_ext/lib/libmmrtpencoder.so|dbf276471b60a706d76e12edde388ef887b27396
-system_ext/lib/libwfdavenhancements.so|f5588f4386dc1e4b3fd4e54781fc692c0e1884c9
-system_ext/lib/libwfdclient.so|feead7bcaf6a54b60a511f62fe2822a5ebf3fbee
-system_ext/lib/libwfdcommonutils.so|4b48d7941df68f7316c464d94d2f31d4e8f026e5
-system_ext/lib/libwfdconfigutils.so|000bddd8f4bf3d92460c54cd25f638c08080eac3
-system_ext/lib/libwfddisplayconfig.so|ec3383d6c03a21985f4442eae6c7e935867d10c8
-system_ext/lib/libwfdmminterface.so|610a9dadc4f577a655b9fdfee2411a44b0e39a7d
-system_ext/lib/libwfdmmsink.so|a045b3dd2b4cad52684e579af2d72554c178e9f6
-system_ext/lib/libwfdmmsrc_system.so|c3a0c08eaefa1cb59ed3134752b9a6d424c0e1e6
-system_ext/lib/libwfdrtsp.so|3ace8ddfd6dc3f8aea2d8f489431599e6467de1c
-system_ext/lib/libwfdservice.so|1512125bbba762f3e5293a24ff13457a69597472
-system_ext/lib/libwfdsinksm.so|68d32947455c468d12e52a57cd71a2ba50d7fcd2
-system_ext/lib/libwfduibcinterface.so|7ac5b7fd7ff0b469629548549cf3a907068be174
-system_ext/lib/libwfduibcsink.so|5630028a8152379a1037d81224b8c031209b93ce
-system_ext/lib/libwfduibcsinkinterface.so|25e3cd7b8fd106c401597e9d71f47006ca06b31f
-system_ext/lib/libwfduibcsrc.so|09821648adb3275b2c2619af7581f35a47643ff5
-system_ext/lib/libwfduibcsrcinterface.so|0c98741c0d65b27acf73a8b1a742e433fbeb86f4
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|07eca0b49614c82d5c5cebdad017efecfe58a9ba
-system_ext/lib64/libmmparser_lite.so|edea214fa6f7e560fd5e75cadf823f2ff880b3f0
-system_ext/lib64/libmmrtpdecoder.so|8bb6d0a8f31795ed913acd3e8cb2299ada7cd22c
-system_ext/lib64/libmmrtpencoder.so|fef79b731d9c2109f23ebc27575b6e057da8310f
-system_ext/lib64/libwfdclient.so|09d0f04a6251f14f41e548592a9848af9d70975c
-system_ext/lib64/libwfdcommonutils.so|4350b11e16553d02fded587feaae5cd82cdfaa0a
-system_ext/lib64/libwfdconfigutils.so|483aca3a0e52bea1702cebf40e00d0c6c8c24063
-system_ext/lib64/libwfddisplayconfig.so|59a5cb17ffe46900c0ae26a8937a5ddab80fe283
-system_ext/lib64/libwfdmminterface.so|b1e33104bc2231c7f75132757a28c918ee4b3889
-system_ext/lib64/libwfdmmsink.so|0db18686f52492b89d9feffffd0494371f6a8c18
-system_ext/lib64/libwfdnative.so|ad6012e5e0ab701d0f871df59d4ed309955b31fd
-system_ext/lib64/libwfdrtsp.so|1957934068e8befa237106fbc584457e86ef07da
-system_ext/lib64/libwfdsinksm.so|bd2369a1203a3b24115605ec1d27d288b4b62718
-system_ext/lib64/libwfduibcinterface.so|d5a578a2159c4681cb9d159b93c1c39b8f3091f7
-system_ext/lib64/libwfduibcsink.so|d4cc3afb86003f0e26134f82b503b6deac30b6b5
-system_ext/lib64/libwfduibcsinkinterface.so|a875792e5242870cd9a069cb367a6b5031fce2f0
-system_ext/lib64/libwfduibcsrc.so|1529ca18c3484b8a3f3d95e9198def564e86fda3
-system_ext/lib64/libwfduibcsrcinterface.so|69400030817aa8f6994a525b027bb3dd7cabd0d4
-
 # WiFi Display (vendor)
 vendor/bin/wifidisplayhalservice
 vendor/etc/wfdconfig.xml
@@ -2389,7 +2256,6 @@ vendor/lib64/libmmrtpdecoder_proprietary.so
 vendor/lib64/libmmrtpencoder_proprietary.so
 
 # Wifi firmware (pdx206)
-vendor/bin/cnss-daemon
 vendor/etc/wifi/bdwlan.e16
 vendor/etc/wifi/bdwlan.e17
 vendor/etc/wifi/bdwlan.elf
@@ -2403,9 +2269,6 @@ vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0.so
 vendor/lib64/libpfter.so
@@ -2414,9 +2277,6 @@ vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 
