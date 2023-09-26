@@ -1,0 +1,3 @@
+attribute hal_idd;
+attribute hal_idd_client;
+attribute hal_idd_server;
