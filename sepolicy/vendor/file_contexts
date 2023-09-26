@@ -13,6 +13,7 @@
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 
 # HALs
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/android\.hardware\.lights-service\.sony_edo                   u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service         u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.semc\.system\.idd@1\.0-service                        u:object_r:hal_idd_default_exec:s0
 
