@@ -2285,11 +2285,8 @@ vendor/bin/mlog_qmi_service
 vendor/etc/init/mlog_qmi_service.rc
 
 # WLAN
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/icm.conf
-vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/regdb.bin
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WLAN (pdx206)
 vendor/etc/wifi/wifi_txpower.conf
