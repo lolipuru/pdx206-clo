@@ -172,6 +172,10 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    SonyEdoFrameworksResCommon \
+    SonyEdoSettingsProviderOverlayCommon \
+    SonyEdoSettingsResCommon \
+    SonyEdoSystemUIResCommon \
     SonyPDX206FrameworksRes \
     SonyPDX206SettingsRes \
     SonyPDX206SystemUIRes
