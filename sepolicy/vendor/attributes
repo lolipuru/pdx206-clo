@@ -1,3 +1,7 @@
 attribute hal_idd;
 attribute hal_idd_client;
 attribute hal_idd_server;
+
+attribute hal_secd;
+attribute hal_secd_client;
+attribute hal_secd_server;

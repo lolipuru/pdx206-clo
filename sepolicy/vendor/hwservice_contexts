@@ -1,1 +1,2 @@
+vendor.somc.hardware.security.secd::IDeviceSecurity               u:object_r:hal_secd_hwservice:s0
 vendor.semc.system.idd::IIdd                                      u:object_r:hal_idd_hwservice:s0

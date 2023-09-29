@@ -2,6 +2,9 @@ allow init ta_qmi_service_exec:file { read getattr map execute open };
 allow init ta_qmi_service:process { transition siginh rlimitinh };
 dontaudit init ta_qmi_service:process noatsecure;
 
+allow init hal_secd_default_exec:file { read getattr map execute open };
+allow init hal_secd_default:process { transition siginh rlimitinh };
+
 allow init { idd_root_dir idd_rca_dir }:dir mounton;
 allow init hal_idd_default_exec:file { read getattr map execute open };
 allow init idd_exec:file { read getattr map execute open };
