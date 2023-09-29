@@ -175,14 +175,20 @@ WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware
 $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating wifi firmware symlinks: $@"
 	@mkdir -p $@/wlan/qca_cld
-	@mkdir -p $@/qca6390
+	$(hide) ln -sf /data/vendor/firmware/wlanmdsp.mbn $@/wlanmdsp.otaupdate
+	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan/qca_cld/wlan_mac.bin
+	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
+WIFI_FIRMWARE_QCA6390_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
+$(WIFI_FIRMWARE_QCA6390_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating wifi firmware symlinks: $@"
+	mkdir -p $@/qca6390
+	$(hide) ln -sf /mnt/vendor/persist/qca6390/wlan_mac.bin $@/qca6390/wlan_mac.bin
+	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/qca6390/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /vendor/etc/wifi/regdb.bin $@/qca6390/regdb.bin
 	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e16 $@/qca6390/bdwlan.e16
 	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e17 $@/qca6390/bdwlan.e17
 	$(hide) ln -sf /vendor/etc/wifi/bdwlan.elf $@/qca6390/bdwlan.elf
-	$(hide) ln -sf /data/vendor/firmware/wlanmdsp.mbn $@/wlanmdsp.otaupdate
-	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan/qca_cld/wlan_mac.bin
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_APQ_GNSS_SYMLINKS) \
@@ -197,6 +203,7 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MSM_MPSS_SYMLINKS) \
     $(RFS_MSM_SLPI_SYMLINKS) \
     $(RFS_MSM_WPSS_SYMLINKS) \
-    $(WIFI_FIRMWARE_SYMLINKS)
+    $(WIFI_FIRMWARE_SYMLINKS) \
+	$(WIFI_FIRMWARE_QCA6390_SYMLINKS)
 
 endif
