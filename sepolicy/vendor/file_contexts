@@ -3,6 +3,7 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/ta_qmi_service         u:object_r:ta_qmi_service_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/mlog_qmi_service       u:object_r:mlog_qmi_service_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/iddd                   u:object_r:idd_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/keyprovd               u:object_r:keyprovd_exec:s0
 
 # Data files
 /mnt/idd                                  u:object_r:idd_root_dir:s0
