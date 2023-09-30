@@ -1187,6 +1187,10 @@ vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/bin/chg-pwr-service
+vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
+vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
+
+# Charger (pdx206)
 vendor/etc/chg-pwr-service.cfg
 
 # CNE
@@ -1322,7 +1326,9 @@ vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display (SEMC)
+# Display
+vendor/bin/hw/vendor.semc.hardware.display@2.2-service
+vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
 
