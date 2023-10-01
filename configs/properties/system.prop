@@ -1,3 +1,40 @@
+# Audio
+audio.offload.min.duration.secs=30
+persist.vendor.audio.hac.enable=false
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+# Camera
+camera.disable_zsl_mode=true
+
+# Charger
+ro.charger.disable_init_blank=true
+
+# Display
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.latch_unsignaled=1
+persist.vendor.color.matrix=2
+
+# IOP
+vendor.iop.enable_prefetch_ofr=1
+vendor.iop.enable_uxe=0
+
 # Media
 media.settings.xml=/odm/etc/media_profiles_V1_0.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Netmgr
+persist.vendor.data.iwlan.enable=true
+
+# Perf
+ro.vendor.qti.core_ctl_max_cpu=4
+ro.vendor.qti.core_ctl_min_cpu=2
+
+# Touchscreen
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Vendor
+ro.vendor.qti.va_aosp.support=1

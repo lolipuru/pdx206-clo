@@ -1,11 +1,103 @@
+# Audio
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+audio.offload.video=true
+audio.deep_buffer.media=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec?=true
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.ras.enabled?=true
+persist.vendor.audio.latency_deep_buffer_speaker=29
+persist.vendor.audio.latency_deep_buffer_headset=29
+persist.vendor.audio.latency_deep_buffer_usb=-13
+persist.vendor.audio.latency_deep_buffer_a2dp=0
+persist.vendor.audio.latency_compress_offload_speaker=-20
+persist.vendor.audio.latency_compress_offload_headset=-20
+persist.vendor.audio.latency_compress_offload_usb=-48
+persist.vendor.audio.latency_compress_offload_a2dp=220
+persist.vendor.audio.latency_media_vibration_speaker=20
+persist.vendor.audio.latency_media_vibration_headset=24
+persist.vendor.audio.latency_media_vibration_usb=0
+persist.vendor.audio.latency_media_vibration_a2dp=0
+ro.vendor.audio.sdk.fluencetype?=fluence
+vendor.audio.enable.cirrus.speaker=true
+
 # Bluetooth
 bluetooth.device.default_name=Xperia 5 II
+bluetooth.hardware.power.idle_cur_ma=6
+bluetooth.hardware.power.operating_voltage_mv=3700
+bluetooth.hardware.power.rx_cur_ma=28
+bluetooth.hardware.power.tx_cur_ma=36
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+vendor.qcom.bluetooth.soc=hastings
+persist.vendor.qcom.bluetooth.soc=hastings
+ro.vendor.bluetooth.wipower=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bt.bdaddr_path=/data/vendor/etc/bluetooth_bdaddr
+
+# Camera
+vendor.camera.enable.uvc=true
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
 
 # Display
+ro.vendor.display.cabl=0
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.has_wide_color_display=true
+vendor.display.enable_posted_start_dyn=1
 persist.sys.sf.color_mode=9
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Graphics
+persist.vendor.colorgamut.current.mode=1
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
+ro.opengles.version=196610
+
+# Keystore
+ro.hardware.keystore_desede=true
+
+# Media
+debug.stagefright.ccodec=1
+
+# NFC
+ro.camera.notify_nfc=1
+
+# PASR
+vendor.power.pasr.enabled=true
+vendor.pasr.activemode.enabled=true
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Sensors
+persist.vendor.sensors.sync_request=true
+persist.vendor.sensors.allow_non_default_discovery=true
+
+# shutdown
+sys.vendor.shutdown.waittime=500
 
 # SPU
 vendor.gatekeeper.disable_spu=true
 
-# Crypto
-ro.crypto.volume.filenames_mode=aes-256-cts
+# Zygote
+zygote.critical_window.minute=10
