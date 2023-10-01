@@ -181,6 +181,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPASonyFrameworksResCommon \
     SonyEdoFrameworksResCommon \
     SonyEdoSettingsProviderOverlayCommon \
     SonyEdoSettingsResCommon \
