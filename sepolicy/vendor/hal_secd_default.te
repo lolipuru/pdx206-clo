@@ -12,6 +12,8 @@ get_prop(hal_secd_default, vendor_tee_listener_prop);
 
 allow hal_secd_default tee_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
 allow hal_secd_default ion_device:chr_file { ioctl read getattr lock map open watch watch_reads };
+allow hal_secd_default sdm_prop:property_service { set };
+allow hal_secd_default sdm_prop:file { read getattr map open };
 
 allow hal_secd_default property_socket:sock_file write;
 
