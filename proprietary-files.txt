@@ -174,6 +174,7 @@ vendor/lib/libbtnv.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libsoc_helper.so
 
 # Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -198,10 +199,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
-# Bluetooth (Other libs)
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libsoc_helper.so
 
 # Camera (pdx206)
 vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16631040.dat
@@ -1172,6 +1169,14 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
+# Cirrus firmware
+vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
+vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
+vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/L-cs35l41-dsp1-spk-prot.bin
+vendor/firmware/R-cs35l41-dsp1-spk-cali.bin
+vendor/firmware/R-cs35l41-dsp1-spk-prot.bin
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/lib/libcdsp_default_listener.so
@@ -1332,34 +1337,6 @@ vendor/etc/init/vendor.semc.hardware.display@2.2-service.rc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
 
-# Display calibration data
-vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_nt36672e_90Hz_fhd_plus_video_mode_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_120HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_60HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml
-vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml
-vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
-
 # Display calibration data (pdx206)
 vendor/etc/qdcm_calib_data_1.xml
 
@@ -1417,6 +1394,17 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 
+# DRM firmware
+vendor/firmware/tzsecuredata.b00
+vendor/firmware/tzsecuredata.b01
+vendor/firmware/tzsecuredata.b02
+vendor/firmware/tzsecuredata.b03
+vendor/firmware/tzsecuredata.b04
+vendor/firmware/tzsecuredata.b05
+vendor/firmware/tzsecuredata.b06
+vendor/firmware/tzsecuredata.b07
+vendor/firmware/tzsecuredata.mdt
+
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
@@ -1424,12 +1412,23 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Fingerprint firmware
+# Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+
+# Fingerprint firmware
+vendor/firmware/egista.b00
+vendor/firmware/egista.b01
+vendor/firmware/egista.b02
+vendor/firmware/egista.b03
+vendor/firmware/egista.b04
+vendor/firmware/egista.b05
+vendor/firmware/egista.b06
+vendor/firmware/egista.b07
+vendor/firmware/egista.mdt
 
 # FM
 system_ext/lib/fm_helium.so
@@ -1482,6 +1481,18 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics (Adreno firmware)
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a620_zap.b00
+vendor/firmware/a620_zap.b01
+vendor/firmware/a620_zap.b02
+vendor/firmware/a620_zap.elf
+vendor/firmware/a620_zap.mdt
+vendor/firmware/a630_sqe.fw
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a650_zap.b00
@@ -1496,35 +1507,9 @@ vendor/lib64/hw/vulkan.adreno.so
 
 # GNSS
 vendor/app/CACertService/CACertService.apk
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti
-vendor/etc/apdr.conf
-vendor/etc/flp.conf
-vendor/etc/gnss_antenna_info.conf
-vendor/etc/gps.conf
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
-vendor/etc/seccomp_policy/gnss@2.0-base.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
-vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
-vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
-vendor/lib64/libgeofencing.so
-vendor/lib64/libgnss.so
-vendor/lib64/libgps.utils.so
 vendor/lib64/libjnihelper.so
-vendor/lib64/libloc_core.so
-vendor/lib64/liblocation_api.so
 vendor/lib64/libqdma_file_agent.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|dcabab23159d9c578ec82b7244d19343b9a99f82
@@ -2149,7 +2134,7 @@ vendor/lib64/libintegration.so
 vendor/lib64/libtpm.so
 
 # Thermal configs (pdx206)
-oem/etc/change.cfg:vendor/etc/change.cfg
+oem/etc/change.cfg:vendor/etc/change.cfg|647be0270cb8c37a9ba33a244195496db3338a64
 
 # Thermal engine
 vendor/bin/thermal-engine
@@ -2167,12 +2152,11 @@ vendor/lib64/libthermal_engine.so
 vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
 # Thermal engine (pdx206)
-oem/etc/thermal-engine.conf:vendor/etc/thermal-engine.conf
+oem/etc/thermal-engine.conf:vendor/etc/thermal-engine.conf|0793cff0b1c459774f9e66834ac66ca764d35123
 
 # Touchscreen firmware (pdx206)
 vendor/firmware/touch_module_id_0x94.img
 
-# Trusted Execution Environment connector
 # Trusted User Interface
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
@@ -2300,41 +2284,3 @@ vendor/etc/wifi/wifi_txpower.conf
 # SIM control
 odm/bin/sony_ext_uim_ctrl
 odm/etc/init/sony_ext_uim_ctrl.rc
-
-# Other maybe needed firmware (pdx206, cirrus, gpu, fingerprint firmware)
-vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/L-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/R-cs35l41-dsp1-spk-cali.bin
-vendor/firmware/R-cs35l41-dsp1-spk-prot.bin
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a620_zap.b00
-vendor/firmware/a620_zap.b01
-vendor/firmware/a620_zap.b02
-vendor/firmware/a620_zap.elf
-vendor/firmware/a620_zap.mdt
-vendor/firmware/a630_sqe.fw
-vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
-vendor/firmware/egista.b00
-vendor/firmware/egista.b01
-vendor/firmware/egista.b02
-vendor/firmware/egista.b03
-vendor/firmware/egista.b04
-vendor/firmware/egista.b05
-vendor/firmware/egista.b06
-vendor/firmware/egista.b07
-vendor/firmware/egista.mdt
-vendor/firmware/tzsecuredata.b00
-vendor/firmware/tzsecuredata.b01
-vendor/firmware/tzsecuredata.b02
-vendor/firmware/tzsecuredata.b03
-vendor/firmware/tzsecuredata.b04
-vendor/firmware/tzsecuredata.b05
-vendor/firmware/tzsecuredata.b06
-vendor/firmware/tzsecuredata.b07
-vendor/firmware/tzsecuredata.mdt
