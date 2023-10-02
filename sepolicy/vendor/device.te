@@ -1,7 +1,15 @@
+# RIL
 type appslog_block_device, dev_type;
 type diag_block_device, dev_type;
-type tad_block_device, dev_type;
-type etsd_device, dev_type;
-type hal_camera_sync, dev_type;
-type ltalabel_block_device, dev_type;
 
+# TA
+type tad_block_device, dev_type;
+
+# fingerprint
+type etsd_device, dev_type;
+
+# camera
+type hal_camera_sync, dev_type;
+
+# LTALabel
+type ltalabel_block_device, dev_type;

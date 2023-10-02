@@ -1,0 +1,6 @@
+# Wakeups
+genfscon sysfs /devices/platform/soc/soc:et6xx/wakeup/wakeup                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1.sony,camera_modules/wakeup/wakeup            u:object_r:sysfs_wakeup:s0
+
+# Leds
+genfscon sysfs /devices/virtual/leds                                                                                        u:object_r:sysfs_leds:s0
