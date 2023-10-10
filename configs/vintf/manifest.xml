@@ -57,11 +57,6 @@
         <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
         <fqname>@2.3::ISoundTriggerHw/default</fqname>
@@ -85,11 +80,6 @@
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <fqname>@2.3::IFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.alarm</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IAlarm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.cacert</name>
@@ -385,10 +375,5 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.media.c2</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IComponentStore/default</fqname>
     </hal>
 </manifest>
