@@ -57,6 +57,9 @@ function blob_fixup() {
     case "${1}" in
     vendor/lib64/vendor.somc.camera* | vendor/bin/hw/vendor.somc.hardware.camera.*)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        "${PATCHELF}" --remove-needed "libbinder.so" "${2}"
+        "${PATCHELF}" --add-needed "libbinder-v32.so" "${2}"
         ;;
     esac
 }
