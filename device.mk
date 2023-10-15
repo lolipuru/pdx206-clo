@@ -296,4 +296,6 @@ PRODUCT_COPY_FILES += \
 
 # XperiaParts
 PRODUCT_PACKAGES += \
-    XperiaParts
+    XperiaParts \
+    XperiaDisplay \
+    XperiaCharger
