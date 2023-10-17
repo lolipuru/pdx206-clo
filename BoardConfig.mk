@@ -77,7 +77,11 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 
-KERNEL_DEFCONFIG := pdx206_defconfig
+ifeq ($(filter pdx203,$(TARGET_DEVICE)),)
+    KERNEL_DEFCONFIG := pdx203_defconfig
+else
+    KERNEL_DEFCONFIG := pdx206_defconfig
+endif
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
@@ -177,4 +181,8 @@ BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
--include vendor/sony/pdx206/BoardConfigVendor.mk
+ifeq ($(filter pdx203,$(TARGET_DEVICE)),)
+    -include vendor/sony/pdx203/BoardConfigVendor.mk
+else
+    -include vendor/sony/pdx206/BoardConfigVendor.mk
+endif

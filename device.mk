@@ -11,7 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
+ifeq ($(filter pdx203,$(TARGET_DEVICE)),)
+    $(call inherit-product, vendor/sony/pdx206/pdx203-vendor.mk)
+else
+    $(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
+endif
 
 # Shipping API level
 BOARD_API_LEVEL := 29
@@ -101,6 +105,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Device Unify
+ifeq ($(filter pdx203,$(TARGET_DEVICE)),)
+    PRODUCT_PACKAGES += \
+        SonyPDX203FrameworksRes \
+        SonyPDX203SettingsRes \
+        SonyPDX203SystemUIRes \
+        ueventd.pdx203.rc
+else
+    PRODUCT_PACKAGES += \
+        SonyPDX206FrameworksRes \
+        SonyPDX206SettingsRes \
+        SonyPDX206SystemUIRes \
+        ueventd.pdx206.rc
+endif
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
@@ -127,8 +146,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # HDR
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/libhdr_somc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/libhdr_somc.xml
+ifeq ($(filter pdx203,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/display/libhdr_somc-pdx203.xml:$(TARGET_COPY_OUT_VENDOR)/etc/libhdr_somc.xml
+else
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/display/libhdr_somc-pdx206.xml:$(TARGET_COPY_OUT_VENDOR)/etc/libhdr_somc.xml
+endif
 
 # Init
 PRODUCT_PACKAGES += \
@@ -136,8 +160,7 @@ PRODUCT_PACKAGES += \
     init.sony-device-common.rc \
     init.sony-platform.rc \
     init.sony.rc \
-    init.qcom.msim.sh \
-    ueventd.pdx206.rc
+    init.qcom.msim.sh
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -206,10 +229,7 @@ PRODUCT_PACKAGES += \
     SonyEdoFrameworksResCommon \
     SonyEdoSettingsProviderOverlayCommon \
     SonyEdoSettingsResCommon \
-    SonyEdoSystemUIResCommon \
-    SonyPDX206FrameworksRes \
-    SonyPDX206SettingsRes \
-    SonyPDX206SystemUIRes
+    SonyEdoSystemUIResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
