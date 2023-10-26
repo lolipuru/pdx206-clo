@@ -1,1 +1,1 @@
-require board=kona|pdx206
+require board=kona|pdx206|XQ-AS72|XQ-AS62|XQ-AS52|XQ-AS42|SO-52A|SOG02|A002SO
