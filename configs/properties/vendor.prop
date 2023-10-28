@@ -92,8 +92,8 @@ debug.stagefright.ccodec=1
 ro.camera.notify_nfc=1
 
 # PASR
-vendor.power.pasr.enabled=true
-vendor.pasr.activemode.enabled=true
+vendor.power.pasr.enabled?=true
+vendor.pasr.activemode.enabled?=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
