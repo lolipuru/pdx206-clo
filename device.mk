@@ -244,6 +244,9 @@ PRODUCT_PACKAGES += \
     libjson
 
 # QTI components
+TARGET_USE_QTI_BT_STACK := true
+TARGET_USE_AIDL_QTI_BT_AUDIO := true
+
 TARGET_COMMON_QTI_COMPONENTS := \
     alarm \
     audio \
