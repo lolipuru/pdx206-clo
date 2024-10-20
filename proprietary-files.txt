@@ -801,7 +801,7 @@ vendor/lib64/libsomc_thermal.so
 vendor/firmware/CAMERA_ICP.elf
 
 # Camera libs
-vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service;DISABLE_CHECKELF
+vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc
@@ -1034,10 +1034,10 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/local_libcamera_metadata.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so
-vendor/lib64/vendor.somc.camera.device@3.2-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.3-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.4-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.5-impl.so;DISABLE_CHECKELF
+vendor/lib64/vendor.somc.camera.device@3.2-impl.so
+vendor/lib64/vendor.somc.camera.device@3.3-impl.so
+vendor/lib64/vendor.somc.camera.device@3.4-impl.so
+vendor/lib64/vendor.somc.camera.device@3.5-impl.so
 
 # Camera postprocessing
 vendor/lib/libscveCommon.so
